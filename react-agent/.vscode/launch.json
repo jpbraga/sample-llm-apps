@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Depurador do Python: Arquivo Atual",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },{
+            "name": "Streamlit",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "streamlit",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env",
+            "args": [
+                "run",
+                "./frontend/app.py"
+            ]
+        }
+    ]
+}
